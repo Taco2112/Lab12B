@@ -45,3 +45,4 @@ in this lab i am going to have to complete the follwoing
   YOU DONT HAVE TO BUT IT'S A GOOD THING TO DO :D
 */
 //now lets get a job :D AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH 
+//"LOOP THE ARRAY , PUT THE TO STRING IN , AND HOLD THAT SUCKKA "
