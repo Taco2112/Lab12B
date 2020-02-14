@@ -8,33 +8,32 @@
 
 
 
-public class Card
+class Card
 {
-   private String suit;
-   private String rank;
-   private int value;
+ private String suit;
+ private String rank;
+ private int value;
 
-   public Card(String s, String r, int v)
-   {
-      suit = s;
-      rank = r;
-      value = v;
-   }
+ public Card(String s, String r, int v)
+ {
+    suit = s;
+    rank = r;
+    value = v;
+ }
 
-   public String getSuit() { return suit; }
-   public String getRank() { return rank; }
-   public int getValue()   { return value; }
+ public String getSuit() { return suit; }
+ public String getRank() { return rank; }
+ public int getValue()   { return value; }
  	
-   public boolean matches(Card otherCard) 
-   {
-		return otherCard.getSuit().equals(this.suit)
-			 && otherCard.getRank().equals(this.rank)
-			 && otherCard.getValue() == this.value;
-	}
+ public boolean matches(Card otherCard) 
+ {
+	return otherCard.getSuit().equals(this.suit)
+	&& otherCard.getRank().equals(this.rank)
+	&& otherCard.getValue() == this.value;
+  }
   
-   public String toString()
-   {
-      return "[" + suit + ", " + rank + ", " + value + "]";
-   }
+  public String toString()
+  {
+    return "[" + suit + ", " + rank + ", " + value + "]";
+  }
 }
-
