@@ -11,12 +11,11 @@
 
 import java.util.ArrayList;
 
-public class Lab12bst
-{
-	public static void main(String[] args)
+class Main {
+ public static void main(String[] args)
 	{   
-      Deck deck = new Deck();
-      System.out.println(deck);
+    Deck deck = new Deck();
+    System.out.println(deck);
 	}
 }
 
@@ -27,11 +26,37 @@ class Deck
 	private int size;
 
 	public Deck() 
-   {
-      size = 52;
+  {
+    size = 52;
 		cards = new ArrayList<Card>();
 	}    
- }
+	
+	private void intializeDeck(){
+	  String[] suits = {"Clubs","Hearts","Spades","Diamonds"};
+	  String[] ranks = {"Ace","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King"};
+	  int[] values = {1,2,3,4,5,6,7,8,9,10,11,12,13};
+	  int index = 0;
+	  
+	  for(int t = 0; t < 4; t++){
+	    for(int k = 0; k < 13; k++){
+	      Card temp = new Card(suits[t],ranks[k],values[k]);
+	      cards.add(temp);
+	      index++;
+	    }
+	  }
+	}
+	
+	public String toString(){
+	  String deck = "";
+    for(int t = 0; t < 52; t++){
+      Card temp = (Card)cards.get(t);
+      deck += temp.toString() + "\n";
+    }
+    return deck;
+	}
+}
+
+
 // TO DO LIST
 /*
 in this lab i am going to have to complete the follwoing
